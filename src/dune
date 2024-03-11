@@ -1,5 +1,5 @@
 (library
- (name app)
+ (name radix)
  (modes melange)
  (libraries reason-react)
  (preprocess
