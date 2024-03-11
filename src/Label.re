@@ -1,4 +1,4 @@
-[@mel.module "radix"] [@react.component]
+[@mel.module "@radix-ui/react-label"] [@react.component]
 external make:
   (
     ~htmlFor: string,
