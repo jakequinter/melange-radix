@@ -10,9 +10,9 @@ homepage: "https://github.com/your-username/radix"
 doc: "https://github.com/your-username/radix"
 bug-reports: "https://github.com/your-username/radix/issues"
 depends: [
-  "dune" {>= "3.14" & >= "3.14"}
-  "melange" {>= "3.0.0-51"}
-  "ocaml" {>= "5.1.1"}
+  "dune" {>= "3.11" & >= "3.11"}
+  "melange" {>= "2.1.0"}
+  "ocaml" {>= "5.1.0"}
   "opam-check-npm-deps"
   "reason" {>= "3.11.0"}
   "reason-react" {>= "0.13.0"}
