@@ -1,5 +1,6 @@
 (library
  (name radix)
+ (public_name melange-radix)
  (modes melange)
  (libraries reason-react)
  (preprocess

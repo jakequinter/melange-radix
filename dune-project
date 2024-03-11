@@ -2,5 +2,5 @@
 
 (using melange 0.1)
 
-(name radix)
+(name melange-radix)
 
