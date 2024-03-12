@@ -1,7 +1,8 @@
 # melange-radix
 
 These are the [Melange](https://melange.re/) bindings for [Radix Primitives](https://www.radix-ui.com/primitives/docs/overview/introduction).
-🚧 It is not completed, I am adding bindings as I need them. 🚧
+
+## 🚧 It is not completed, I am adding bindings as I need them. 🚧
 
 ## Installing into opam switch
 
