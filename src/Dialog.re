@@ -29,7 +29,12 @@ external portal:
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
 external overlay:
-  (~asChild: bool=?, ~forceMount: bool=?, ~dataState: string=?) =>
+  (
+    ~asChild: bool=?,
+    ~forceMount: bool=?,
+    ~className: string=?,
+    ~dataState: string=?
+  ) =>
   React.element =
   "Overlay";
 
