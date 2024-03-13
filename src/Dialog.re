@@ -45,8 +45,8 @@ external content:
     ~onOpenAutoFocus: Dom.event => unit=?,
     ~onCloseAutoFocus: Dom.event => unit=?,
     ~onEscapeKeyDown: Dom.event => unit=?,
-    ~onPointerDownOutside: Dom.event => unit=?,
-    ~onInteractOutside: Dom.event => unit=?,
+    ~onPointerDownOutside: ReactEvent.Synthetic.t => unit=?,
+    ~onInteractOutside: ReactEvent.Synthetic.t => unit=?,
     ~dataState: string=?,
     ~className: string=?,
     ~children: React.element
