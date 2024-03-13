@@ -4,7 +4,6 @@ external root:
     ~defaultOpen: bool=?,
     ~open_: bool=?,
     ~onOpenChange: bool => unit=?,
-    ~className: string=?,
     ~children: React.element
   ) =>
   React.element =
@@ -56,13 +55,19 @@ external content:
   "Content";
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
-external close: (~asChild: bool=?, ~className: string=?) => React.element =
+external close:
+  (~asChild: bool=?, ~className: string=?, ~children: React.element) =>
+  React.element =
   "Close";
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
-external title: (~asChild: bool=?, ~className: string=?) => React.element =
+external title:
+  (~asChild: bool=?, ~className: string=?, ~children: React.element) =>
+  React.element =
   "Title";
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
-external description: (~asChild: bool=?, ~className: string=?) => React.element =
+external description:
+  (~asChild: bool=?, ~className: string=?, ~children: React.element) =>
+  React.element =
   "Description";
