@@ -12,7 +12,12 @@ external root:
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
 external trigger:
-  (~asChild: bool=?, ~dataState: string=?, ~children: React.element) =>
+  (
+    ~asChild: bool=?,
+    ~dataState: string=?,
+    ~className: string=?,
+    ~children: React.element
+  ) =>
   React.element =
   "Trigger";
 
@@ -24,12 +29,7 @@ external portal:
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
 external overlay:
-  (
-    ~asChild: bool=?,
-    ~forceMount: bool=?,
-    ~dataState: string=?,
-    ~children: React.element
-  ) =>
+  (~asChild: bool=?, ~forceMount: bool=?, ~dataState: string=?) =>
   React.element =
   "Overlay";
 
@@ -44,16 +44,20 @@ external content:
     ~onPointerDownOutside: Dom.event => unit=?,
     ~onInteractOutside: Dom.event => unit=?,
     ~dataState: string=?,
+    ~className: string=?,
     ~children: React.element
   ) =>
   React.element =
   "Content";
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
-external close: (~asChild: bool=?) => React.element = "Close";
+external close: (~asChild: bool=?, ~className: string=?) => React.element =
+  "Close";
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
-external title: (~asChild: bool=?) => React.element = "Title";
+external title: (~asChild: bool=?, ~className: string=?) => React.element =
+  "Title";
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
-external description: (~asChild: bool=?) => React.element = "Description";
+external description: (~asChild: bool=?, ~className: string=?) => React.element =
+  "Description";
