@@ -10,6 +10,12 @@ These are the [Melange](https://melange.re/) bindings for [Radix Primitives](htt
 opam pin add melange-radix git+https://github.com/jakequinter/melange-radix#main
 ```
 
+## Removing from opam switch
+
+```sh
+opam pin remove melange-radix
+```
+
 The bindings support the `^2.0.2` versions of these Radix Primitives npm packages:
 
 - [x] [Label](https://www.radix-ui.com/primitives/docs/components/label)
