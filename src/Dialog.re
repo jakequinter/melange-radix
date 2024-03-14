@@ -11,12 +11,7 @@ external root:
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
 external trigger:
-  (
-    ~asChild: bool=?,
-    ~dataState: string=?,
-    ~className: string=?,
-    ~children: React.element
-  ) =>
+  (~asChild: bool=?, ~className: string=?, ~children: React.element) =>
   React.element =
   "Trigger";
 
@@ -28,12 +23,7 @@ external portal:
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
 external overlay:
-  (
-    ~asChild: bool=?,
-    ~forceMount: bool=?,
-    ~className: string=?,
-    ~dataState: string=?
-  ) =>
+  (~asChild: bool=?, ~forceMount: bool=?, ~className: string=?) =>
   React.element =
   "Overlay";
 
@@ -47,7 +37,6 @@ external content:
     ~onEscapeKeyDown: Dom.event => unit=?,
     ~onPointerDownOutside: ReactEvent.Synthetic.t => unit=?,
     ~onInteractOutside: ReactEvent.Synthetic.t => unit=?,
-    ~dataState: string=?,
     ~className: string=?,
     ~children: React.element
   ) =>
