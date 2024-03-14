@@ -3,18 +3,11 @@ external root:
   (
     ~defaultOpen: bool=?,
     ~open_: bool=?,
-    ~onOpenChange: bool => unit=?,
+    ~onOpenChange: (bool => bool) => unit=?,
     ~children: React.element
   ) =>
   React.element =
   "Root";
-
-let makeProps = (~defaultOpen, ~open_, ~onOpenChange, ~children) => {
-  "defaultOpen": defaultOpen,
-  "open": open_,
-  "onOpenChange": onOpenChange,
-  "children": children,
-};
 
 [@mel.module "@radix-ui/react-dialog"] [@react.component]
 external trigger:
