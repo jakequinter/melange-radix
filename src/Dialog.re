@@ -2,8 +2,9 @@
 external root:
   (
     ~defaultOpen: bool=?,
-    ~open_: bool=?,
+    ~_open: bool=?,
     ~onOpenChange: (bool => bool) => unit=?,
+    ~modal: bool=?,
     ~children: React.element
   ) =>
   React.element =
